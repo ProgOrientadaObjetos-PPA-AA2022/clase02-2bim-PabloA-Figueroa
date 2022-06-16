@@ -35,7 +35,7 @@ public class Ejecutor2 {
             EstudiantePresencial estP1 = new EstudiantePresencial(nombre,
                     apellido, identificacion, edad, nCreditos, cCreditos);
             estP1.calcularMatriculaPresencial();
-            cadena = String.format("\n%s",cadena,estP1.toString());
+            cadena = String.format("%s\n%s\n",cadena,estP1.toString());
             System.out.println("Ingrese 1 para salir del ciclo");
             int salir = entrada.nextInt();
             if (salir == 1) {
@@ -44,6 +44,6 @@ public class Ejecutor2 {
          
         }
         
-        System.out.printf("Estudiante Presencial: \n%s\n",cadena );
+        System.out.printf("%s",cadena );
     }
 }
